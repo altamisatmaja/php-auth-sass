@@ -3,7 +3,7 @@
 
     if (isset($_SESSION["username"])) {
         session_destroy();
-        echo "<script>location.href='login.php'</script>";
+        header("Location: /php-auth/views/pages/auth/sign-in.php");
     }else{
-        echo "<script>location.href='login.php'</script>";
+        header("Location: /php-auth/views/pages/auth/sign-in.php");
     }
